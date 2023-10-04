@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+body section {
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    width: 400px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    border-right: 2px solid rgb(85, 182, 85);
+    border-top: 2px solid rgb(85, 182, 85);
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(90, 112, 92);
+}
+
+h1 span {
+    font-size: 14px;
+    color: rgb(176, 176, 176);
+    font-family: Seaweed Script;
+}
+
+#output {
+    height: 50px;
+    background-color: rgb(102, 119, 103);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    font-family: VT323;
+    font-size: 30px;
+    border-left: 2px solid rgb(160, 160, 160);
+    border-bottom: 2px solid rgb(160, 160, 160);
+    color: rgb(168, 188, 171);
+}
+
+#container {
+    display: flex;
+    gap: 10px;
+}
+
+#numbersDiv {
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+    border: 2px solid rgba(78, 78, 78, 0.418);
+    border-radius: 5px;
+}
+
+#numbersDiv button {
+    border: none;
+    flex: 1;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(88, 88, 88);
+    color: rgb(221, 221, 221);
+    border-left: 2px solid rgb(160, 160, 160);
+    border-bottom: 2px solid rgb(160, 160, 160);
+    cursor: pointer;
+}
+
+#funcDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 5px;
+    border: 2px solid rgba(78, 78, 78, 0.418);
+    border-radius: 5px;
+    gap: 5px;
+}
+
+
+.func-div button {
+    border: none;
+    flex: 1;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(88, 88, 88);
+    color: rgb(221, 221, 221);
+    border-left: 2px solid rgb(160, 160, 160);
+    border-bottom: 2px solid rgb(160, 160, 160);
+    cursor: pointer;
+}
+
+#evaluateBtn {
+    background-color: rgb(76, 86, 72);
+}
+
+
+

@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
 
     const numbersDiv = document.querySelector('#numbersDiv')
-    const outputField = document.querySelector('#output') 
     const outputHere = document.querySelector('#outputHere')
+    const acBtn = document.querySelector('#acBtn')
 
     let output = ''
+
+    acBtn.addEventListener('click', () => {
+        output = ''
+        outputHere.innerText = 'output'
+    })
 
     for(i = 0; i < 10; i++) {
         const numBtn = document.createElement('button')
@@ -43,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-
     const numButtons = document.querySelectorAll('#container div button')
 
     numButtons.forEach((button) => {
@@ -68,7 +72,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
     })
-
-
 
 })

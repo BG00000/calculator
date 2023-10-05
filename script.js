@@ -7,15 +7,41 @@ document.addEventListener('DOMContentLoaded', () => {
     let output = ''
 
     for(i = 0; i < 10; i++) {
-        const btn = document.createElement('button')
-        btn.innerText = i
-        numbersDiv.appendChild(btn)
+        const numBtn = document.createElement('button')
+        numBtn.innerText = i
+        numbersDiv.appendChild(numBtn)
 
-        btn.addEventListener('click', () => {
-            output += btn.innerText
-            outputField.innerText = output
+        numBtn.addEventListener('click', () => {
+            
+            if(output.length > 30) {
+                output += ''
+            } else {
+                output += numBtn.innerText
+                outputField.innerText = output
+            }
         })
     }
+
+    //for each function btn, on click --> output += btn.innerText
+
+    const funcDiv = document.querySelector('#funcDiv')
+    funcBtnChars = ['+', '-', '/', 'x', '.', '=']
+
+    for(i = 0; i < 6; i++) {
+        const funcBtn = document.createElement('button')
+        funcBtn.id = `funcBtn${i}`
+        funcDiv.appendChild(funcBtn)
+
+
+        funcBtn.innerText = funcBtnChars[i]
+
+        funcBtn.addEventListener('click', () => {
+            output += funcBtn.innerText
+            outputField.innerText = output
+        })
+
+    }
+
 
     const numButtons = document.querySelectorAll('#container div button')
 

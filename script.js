@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //for each function btn, on click --> output += btn.innerText
 
     const funcDiv = document.querySelector('#funcDiv')
-    funcBtnChars = ['+', '-', '/', 'x', '.', '=']
+    funcBtnChars = ['+', '-', '/', '*', '.', '=']
 
     for(i = 0; i < 6; i++) {
         const funcBtn = document.createElement('button')
@@ -47,6 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
     }
+
+
+    funcBtn5.addEventListener('click', () => {
+        outputHere.innerText = ''
+
+        output = output.substring(0, output.length - 1)
+        
+        const calculate = new Function(`return ${output}`)
+
+        output = ''
+
+        outputHere.innerText = calculate()
+    })
+
+
+
+    //_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
 
     const numButtons = document.querySelectorAll('#container div button')
 
@@ -72,5 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
     })
+
+    
 
 })

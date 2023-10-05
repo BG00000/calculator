@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         output = ''
 
-        outputHere.innerText = calculate()
+        outputHere.innerText = Math.round(calculate() * 1000000000) / 1000000000
     })
 
 

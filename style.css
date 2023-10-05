@@ -14,13 +14,14 @@ body {
 
 body section {
     display: flex;
-    background-color: rgb(56, 56, 56);
+    background-image: linear-gradient(0.7turn, rgb(34, 39, 34), rgb(31, 38, 31), rgb(15, 16, 15));
     width: 400px;
     flex-direction: column;
     padding: 20px;
     border-radius: 20px;
     border-right: 2px solid rgb(85, 182, 85);
     border-top: 2px solid rgb(85, 182, 85);
+    box-shadow: inset -5px -5px 5px rgb(14, 16, 14), 0px 5px 10px rgb(172, 172, 172);
 }
 
 h1 {
@@ -36,15 +37,16 @@ h1 span {
 
 #output {
     height: 50px;
-    background-color: rgb(102, 119, 103);
+    background-image: linear-gradient(rgb(73, 104, 76), rgb(89, 122, 94));
     border-radius: 5px;
     padding: 10px;
     margin: 20px 0px 20px 0px;
     font-family: VT323;
     font-size: 30px;
-    border-left: 2px solid rgb(160, 160, 160);
-    border-bottom: 2px solid rgb(160, 160, 160);
+    border-left: 1.2px solid rgb(156, 175, 157);
+    border-bottom: 2px solid rgb(79, 87, 78);
     color: rgb(168, 188, 171);
+    box-shadow: inset 5px 5px 5px rgb(61, 88, 66);
 }
 
 #container {
@@ -62,18 +64,6 @@ h1 span {
     border-radius: 5px;
 }
 
-#numbersDiv button {
-    border: none;
-    flex: 1;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: rgb(88, 88, 88);
-    color: rgb(221, 221, 221);
-    border-left: 2px solid rgb(160, 160, 160);
-    border-bottom: 2px solid rgb(160, 160, 160);
-    cursor: pointer;
-}
-
 #funcDiv {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -84,21 +74,23 @@ h1 span {
 }
 
 
-.func-div button {
+.func-div button,
+#numbersDiv button {
     border: none;
     flex: 1;
     padding: 10px;
     border-radius: 3px;
-    background-color: rgb(88, 88, 88);
     color: rgb(221, 221, 221);
     border-left: 2px solid rgb(160, 160, 160);
-    border-bottom: 2px solid rgb(160, 160, 160);
+    border-bottom: 2px solid rgb(103, 103, 103);
     cursor: pointer;
+    background-image: linear-gradient(0.7turn, rgb(124, 124, 124), rgb(84, 84, 84));
 }
 
 #evaluateBtn {
-    background-color: rgb(76, 86, 72);
+    background-image: linear-gradient(0.7turn, rgb(34, 122, 44), rgb(80, 125, 87));
 }
+
 
 
 

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const numbersDiv = document.querySelector('#numbersDiv')
     const outputField = document.querySelector('#output') 
+    const outputHere = document.querySelector('#outputHere')
 
     let output = ''
 
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 output += ''
             } else {
                 output += numBtn.innerText
-                outputField.innerText = output
+                outputHere.innerText = output
             }
         })
     }
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         funcBtn.addEventListener('click', () => {
             output += funcBtn.innerText
-            outputField.innerText = output
+            outputHere.innerText = output
         })
 
     }
